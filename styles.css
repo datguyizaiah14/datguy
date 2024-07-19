@@ -1,8 +1,32 @@
 p{
-    color: #654236-  ;
+    color: #654236;
 }
 
 body{
     background-color: #4BB3FD;
 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    border: 2px solid black;
+}
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color:#4BB3FD;
+}
+.cell:hover {
+    background-color: #ddd;
 }
